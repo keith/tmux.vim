@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead .tmux.conf*,tmux.conf* setfiletype tmux
+autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
