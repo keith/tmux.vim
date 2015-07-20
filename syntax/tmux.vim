@@ -216,6 +216,7 @@ syn keyword tmuxOptsSet
 	\ status-position
 	\ status-right
 	\ status-right-length
+	\ status-style
 	\ status-utf8
 	\ staus-right-style
 	\ terminal-overrides
