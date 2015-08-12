@@ -275,8 +275,10 @@ syn match tmuxVariableExpansion	/\${\=\w\+}\=/		display
 " Comments can span multiple lines, when the newline is escaped
 " (with a single) backslash at the end.
 syn region tmuxComment  start=/#/ skip=/\\\@<!\\$/ end=/$/ contains=tmuxTodo
-syn region tmuxString	start=/"/ end=/"/ display oneline
-syn region tmuxString	start=/'/ end=/'/ display oneline
+" Strings can span multiple lines, but the newline in there has to be escaped.
+" (this is not enforced/checked by the syntax definition).
+syn region tmuxString   start=/"/                  end=/"/
+syn region tmuxString   start=/'/                  end=/'/
 
 hi def link tmuxAction			Boolean
 hi def link tmuxBoolean			Boolean
