@@ -191,9 +191,6 @@ syn keyword tmuxOptsSet
 	\ message-command-style
 	\ message-limit
 	\ message-style
-	\ mouse-resize-pane
-	\ mouse-select-pane
-	\ mouse-select-window
 	\ mouse-utf8
 	\ pane-active-border-style
 	\ pane-border-style
@@ -241,11 +238,11 @@ syn keyword tmuxOptsSetw
 	\ main-pane-height
 	\ main-pane-width
 	\ mode-keys
-	\ mode-mouse
 	\ mode-style
 	\ monitor-activity
 	\ monitor-content
 	\ monitor-silence
+	\ mouse
 	\ other-pane-height
 	\ other-pane-width
 	\ pane-base-index
