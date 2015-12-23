@@ -31,15 +31,16 @@ syn keyword tmuxAction	any current none
 syn keyword tmuxBoolean	off on
 
 syn keyword tmuxCmds
-	\ attach[-session]
-	\ bind[-key]
+	\ attach
+	\ attach-session
+	\ bind
+	\ bind-key
 	\ break-pane
 	\ breakp
 	\ capture-pane
 	\ capturep
 	\ choose-buffer
 	\ choose-client
-	\ choose-list
 	\ choose-session
 	\ choose-tree
 	\ choose-window
@@ -47,124 +48,147 @@ syn keyword tmuxCmds
 	\ clearhist
 	\ clock-mode
 	\ command-prompt
-	\ confirm[-before]
+	\ confirm
+	\ confirm-before
 	\ copy-mode
 	\ delete-buffer
 	\ deleteb
-	\ detach[-client]
-	\ display[-message]
+	\ detach
+	\ detach-client
+	\ display
+	\ display-message
 	\ display-panes
 	\ displayp
 	\ find-window
 	\ findw
-	\ has[-session]
-	\ if[-shell]
+	\ has
+	\ has-session
+	\ if
+	\ if-shell
+	\ info
 	\ join-pane
 	\ joinp
 	\ kill-pane
-	\ killp
 	\ kill-server
 	\ kill-session
 	\ kill-window
+	\ killp
 	\ killw
+	\ last
 	\ last-pane
+	\ last-window
 	\ lastp
-	\ last[-window]
 	\ link-window
 	\ linkw
 	\ list-buffers
-	\ lsb
 	\ list-clients
-	\ lsc
 	\ list-commands
-	\ lscm
 	\ list-keys
-	\ lsk
 	\ list-panes
-	\ lsp
 	\ list-sessions
-	\ ls
 	\ list-windows
-	\ lsw
 	\ load-buffer
 	\ loadb
+	\ lock
 	\ lock-client
-	\ lockc
-	\ lock[-server]
+	\ lock-server
 	\ lock-session
+	\ lockc
 	\ locks
+	\ ls
+	\ lsb
+	\ lsc
+	\ lscm
+	\ lsk
+	\ lsp
+	\ lsw
 	\ move-pane
-	\ movep
 	\ move-window
+	\ movep
 	\ movew
-	\ new[-session]
+	\ new
+	\ new-session
+	\ new-window
+	\ neww
+	\ next
 	\ next-layout
+	\ next-window
 	\ nextl
-	\ next[-window]
 	\ paste-buffer
 	\ pasteb
+	\ path
 	\ pipe-pane
 	\ pipep
+	\ prev
 	\ previous-layout
+	\ previous-window
 	\ prevl
-	\ prev[ious-window]
-	\ refresh[-client]
-	\ rename[-session]
+	\ refresh
+	\ refresh-client
+	\ rename
+	\ rename-session
 	\ rename-window
 	\ renamew
 	\ resize-pane
 	\ resizep
 	\ respawn-pane
-	\ respawnp
 	\ respawn-window
+	\ respawnp
 	\ respawnw
 	\ rotate-window
 	\ rotatew
-	\ run[-shell]
+	\ run
+	\ run-shell
 	\ save-buffer
 	\ saveb
 	\ select-layout
-	\ selectl
 	\ select-pane
-	\ selectp
 	\ select-window
+	\ selectl
+	\ selectp
 	\ selectw
-	\ send[-keys]
+	\ send
+	\ send-keys
 	\ send-prefix
 	\ server-info
-	\ info
+	\ set
 	\ set-buffer
-	\ setb
 	\ set-environment
-	\ setenv
-	\ set[-option]
+	\ set-option
 	\ set-window-option
+	\ setb
+	\ setenv
 	\ setw
+	\ show
 	\ show-buffer
-	\ showb
 	\ show-environment
-	\ showenv
 	\ show-messages
-	\ showmsgs
-	\ show[-options]
+	\ show-options
 	\ show-window-options
+	\ showb
+	\ showenv
+	\ showmsgs
 	\ showw
-	\ source[-file]
+	\ source
+	\ source-file
 	\ split-window
 	\ splitw
-	\ start[-server]
+	\ start
+	\ start-server
 	\ suspend-client
 	\ suspendc
 	\ swap-pane
-	\ swapp
 	\ swap-window
+	\ swapp
 	\ swapw
 	\ switch-client
 	\ switchc
-	\ unbind[-key]
+	\ unbind
+	\ unbind-key
 	\ unlink-window
 	\ unlinkw
-	\ wait[-for]
+	\ wait
+	\ wait-for
 
 syn keyword tmuxOptsSet
 	\ assume-paste-time
@@ -184,16 +208,15 @@ syn keyword tmuxOptsSet
 	\ escape-time
 	\ exit-unattached
 	\ focus-events
+	\ history-file
 	\ history-limit
 	\ lock-after-time
 	\ lock-command
-	\ lock-server
 	\ message-command-style
 	\ message-limit
 	\ message-style
+	\ mouse
 	\ mouse-utf8
-	\ pane-active-border-style
-	\ pane-border-style
 	\ prefix
 	\ prefix2
 	\ quiet
@@ -213,14 +236,13 @@ syn keyword tmuxOptsSet
 	\ status-position
 	\ status-right
 	\ status-right-length
+	\ status-right-style
 	\ status-style
 	\ status-utf8
-	\ staus-right-style
 	\ terminal-overrides
 	\ update-environment
 	\ visual-activity
 	\ visual-bell
-	\ visual-content
 	\ visual-silence
 	\ word-separators
 
@@ -229,8 +251,7 @@ syn keyword tmuxOptsSetw
 	\ allow-rename
 	\ alternate-screen
 	\ automatic-rename
-	\ c0-change-interval
-	\ c0-change-trigger
+	\ automatic-rename-format
 	\ clock-mode-colour
 	\ clock-mode-style
 	\ force-height
@@ -240,24 +261,25 @@ syn keyword tmuxOptsSetw
 	\ mode-keys
 	\ mode-style
 	\ monitor-activity
-	\ monitor-content
 	\ monitor-silence
-	\ mouse
 	\ other-pane-height
 	\ other-pane-width
+	\ pane-active-border-style
 	\ pane-base-index
+	\ pane-border-style
 	\ remain-on-exit
 	\ synchronize-panes
 	\ utf8
+	\ window-active-style
 	\ window-status-activity-style
 	\ window-status-bell-style
-	\ window-status-content-style
 	\ window-status-current-format
 	\ window-status-current-style
 	\ window-status-format
 	\ window-status-last-style
 	\ window-status-separator
 	\ window-status-style
+	\ window-style
 	\ wrap-search
 	\ xterm-keys
 
@@ -272,10 +294,8 @@ syn match tmuxVariableExpansion	/\${\=\w\+}\=/		display
 " Comments can span multiple lines, when the newline is escaped
 " (with a single) backslash at the end.
 syn region tmuxComment  start=/#/ skip=/\\\@<!\\$/ end=/$/ contains=tmuxTodo
-" Strings can span multiple lines, but the newline in there has to be escaped.
-" (this is not enforced/checked by the syntax definition).
-syn region tmuxString   start=/"/                  end=/"/
-syn region tmuxString   start=/'/                  end=/'/
+syn region tmuxString	start=/"/ end=/"/ display oneline
+syn region tmuxString	start=/'/ end=/'/ display oneline
 
 hi def link tmuxAction			Boolean
 hi def link tmuxBoolean			Boolean
