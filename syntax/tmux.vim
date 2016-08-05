@@ -227,6 +227,8 @@ syn keyword tmuxOptsSet
 	\ set-titles
 	\ set-titles-string
 	\ status
+	\ status-bg
+	\ status-fg
 	\ status-interval
 	\ status-justify
 	\ status-keys
@@ -271,6 +273,7 @@ syn keyword tmuxOptsSetw
 	\ window-active-style
 	\ window-status-activity-style
 	\ window-status-bell-style
+	\ window-status-current-bg
 	\ window-status-current-format
 	\ window-status-current-style
 	\ window-status-format
