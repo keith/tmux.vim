@@ -300,7 +300,7 @@ syn keyword tmuxOptsSetw
 syn keyword tmuxTodo FIXME NOTE TODO XXX contained
 
 syn match tmuxKey		/\(C-\|M-\|\^\)\+\S\+/	display
-syn match tmuxNumber 		/\d\+/			display
+syn match tmuxNumber 		/\<\d\+\>/			display
 syn match tmuxOptions		/\s-\a\+/		display
 syn match tmuxVariable		/\w\+=/			display
 syn match tmuxVariableExpansion	/\${\=\w\+}\=/		display
