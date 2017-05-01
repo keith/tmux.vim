@@ -259,24 +259,36 @@ syn keyword tmuxOptsSetw
 	\ force-width
 	\ main-pane-height
 	\ main-pane-width
+	\ message-attr
+	\ message-bg
+	\ message-fg
 	\ mode-keys
 	\ mode-style
 	\ monitor-activity
 	\ monitor-silence
 	\ other-pane-height
 	\ other-pane-width
+	\ pane-active-border-bg
+	\ pane-active-border-fg
 	\ pane-active-border-style
 	\ pane-base-index
+	\ pane-border-fg
 	\ pane-border-style
 	\ remain-on-exit
 	\ synchronize-panes
 	\ window-active-style
+	\ window-status-activity-attr
+	\ window-status-activity-bg
+	\ window-status-activity-fg
 	\ window-status-activity-style
 	\ window-status-bell-style
+	\ window-status-bg
+	\ window-status-current-attr
 	\ window-status-current-bg
 	\ window-status-current-fg
 	\ window-status-current-format
 	\ window-status-current-style
+	\ window-status-fg
 	\ window-status-format
 	\ window-status-last-style
 	\ window-status-separator
