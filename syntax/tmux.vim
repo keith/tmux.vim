@@ -26,7 +26,7 @@ endif
 setlocal iskeyword+=-
 syntax case match
 
-syn keyword tmuxAction	any current none
+syn keyword tmuxAction	any current default none
 syn keyword tmuxBoolean	off on
 
 syn keyword tmuxCmds
