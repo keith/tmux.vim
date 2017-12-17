@@ -50,6 +50,7 @@ syn keyword tmuxCmds
 	\ confirm
 	\ confirm-before
 	\ copy-mode
+	\ copy-mode-vi
 	\ delete-buffer
 	\ deleteb
 	\ detach
