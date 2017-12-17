@@ -17,9 +17,9 @@
 " - Switch on syntax highlighting by adding "syntax enable" to .vimrc.
 "
 
-if version < 600
+if v:version < 600
 	syntax clear
-elseif exists("b:current_syntax")
+elseif exists('b:current_syntax')
 	finish
 endif
 
@@ -325,4 +325,4 @@ hi def link tmuxTodo			Todo
 hi def link tmuxVariable		Constant
 hi def link tmuxVariableExpansion	Constant
 
-let b:current_syntax = "tmux"
+let b:current_syntax = 'tmux'
