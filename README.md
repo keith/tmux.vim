@@ -1,3 +1,9 @@
+# **DEPRECATED**
+
+This repo has been deprecated for [this
+replacement](https://github.com/ericpruitt/tmux.vim). It also ships with
+vim by default so you should already have it.
+
 # tmux.vim
 
 This is syntax highlighting for tmux. This is pulled directly from the
